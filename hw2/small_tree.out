@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<A1 chkngAcctStatus &le; 2.5<br/>gini = 0.4193<br/>samples = 799<br/>value = [560, 239]<br/>class = Good credit>, fillcolor="#e5813992"] ;
+1 [label=<A2 durationMonths &le; 22.5<br/>gini = 0.4919<br/>samples = 433<br/>value = [244, 189]<br/>class = Good credit>, fillcolor="#e5813939"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<A3 creditHistory &le; 1.5<br/>gini = 0.448<br/>samples = 245<br/>value = [162, 83]<br/>class = Good credit>, fillcolor="#e581397c"] ;
+1 -> 2 ;
+3 [label=<gini = 0.4082<br/>samples = 21<br/>value = [6, 15]<br/>class = Bad credit>, fillcolor="#399de599"] ;
+2 -> 3 ;
+4 [label=<gini = 0.4228<br/>samples = 224<br/>value = [156, 68]<br/>class = Good credit>, fillcolor="#e5813990"] ;
+2 -> 4 ;
+5 [label=<A6 savingsTotal &le; 1.5<br/>gini = 0.4919<br/>samples = 188<br/>value = [82, 106]<br/>class = Bad credit>, fillcolor="#399de53a"] ;
+1 -> 5 ;
+6 [label=<gini = 0.4462<br/>samples = 125<br/>value = [42, 83]<br/>class = Bad credit>, fillcolor="#399de57e"] ;
+5 -> 6 ;
+7 [label=<gini = 0.4636<br/>samples = 63<br/>value = [40, 23]<br/>class = Good credit>, fillcolor="#e581396c"] ;
+5 -> 7 ;
+8 [label=<A14 otherInstllmtType &le; 2.5<br/>gini = 0.2359<br/>samples = 366<br/>value = [316, 50]<br/>class = Good credit>, fillcolor="#e58139d7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<A4 loanPurpose &le; 0.5<br/>gini = 0.426<br/>samples = 65<br/>value = [45, 20]<br/>class = Good credit>, fillcolor="#e581398e"] ;
+8 -> 9 ;
+10 [label=<gini = 0.4734<br/>samples = 13<br/>value = [5, 8]<br/>class = Bad credit>, fillcolor="#399de560"] ;
+9 -> 10 ;
+11 [label=<gini = 0.355<br/>samples = 52<br/>value = [40, 12]<br/>class = Good credit>, fillcolor="#e58139b3"] ;
+9 -> 11 ;
+12 [label=<A13 age &le; 34.5<br/>gini = 0.1795<br/>samples = 301<br/>value = [271, 30]<br/>class = Good credit>, fillcolor="#e58139e3"] ;
+8 -> 12 ;
+13 [label=<gini = 0.2706<br/>samples = 155<br/>value = [130, 25]<br/>class = Good credit>, fillcolor="#e58139ce"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0661<br/>samples = 146<br/>value = [141, 5]<br/>class = Good credit>, fillcolor="#e58139f6"] ;
+12 -> 14 ;
+}
