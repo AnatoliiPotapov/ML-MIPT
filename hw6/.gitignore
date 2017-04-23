@@ -1,2 +1,4 @@
 cifar10
 cifar-10-python.tar.gz
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
